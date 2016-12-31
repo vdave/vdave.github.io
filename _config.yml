@@ -1,7 +1,7 @@
 title:              Dave
 tagline:            on GitHub Pages
 description:        Miscellaneous, mostly work related notes.
-url:                http://vdave.github.io
+url:                http://datadavev.github.io
 
 author:
   name:             Dave Vieglais
@@ -9,6 +9,9 @@ author:
   email:            dave.vieglais@gmail.com
 
 # GitHub Pages / Jekyll configuration
+markdown: kramdown
+kramdown:
+  input: GFM
 baseurl:            ''
 permalink:          /:title/
 paginate:           5
