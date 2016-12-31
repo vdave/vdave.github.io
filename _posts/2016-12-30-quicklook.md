@@ -20,8 +20,8 @@ Quicklook preview a web page from the command line on OS X:
 
 ```bash
 $ cat ~/bin/qlurl
-#! /bin/sh
 
+#! /bin/sh
 automator -i "$1" ~/bin/urlpop.workflow
 ```
 
