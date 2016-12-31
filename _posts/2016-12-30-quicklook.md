@@ -5,7 +5,9 @@ categories: [OS X]
 tags: [preview, files]
 ---
 
-[QuickLook](https://en.wikipedia.org/wiki/Quick_Look) is the thing that lets you quickly preview content in finder, spotlight, and various apps. It is also easily used from the command line:
+[QuickLook](https://en.wikipedia.org/wiki/Quick_Look) is the thing that lets you quickly preview content in finder, spotlight, and various apps. It is also easily used from the command line.
+
+<!--break-->
 
 ```bash
 $ cat ~/bin/ql
