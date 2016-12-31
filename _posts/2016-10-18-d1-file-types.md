@@ -19,4 +19,19 @@ application/octet-stream; charset=binary
 
 It would be nice to augment the `file` command to support the various [formats](https://cn.dataone.org/cn/v2/formats) used in DataONE.
 
-[^1]: See also <https://linux.die.net/man/5/magic>
+For xml files, like various types of metadata, detection can use regular
+expressions[^2] on namespaces. For example, part of the ``kml`` detection looks like:
+
+~~~ plain
+0 string    \<?xml
+>20  search/400 \ xmlns=
+>>&0 regex ['"]http://earth.google.com/kml Google KML document
+!:mime application/vnd.google-earth.kml+xml
+>>>&1 string 2.0' \b, version 2.0
+>>>&1 string 2.1' \b, version 2.1
+>>>&1 string 2.2' \b, version 2.2
+~~~
+
+
+[^1]: <https://linux.die.net/man/5/magic>
+[^2]: <https://www.mkssoftware.com/docs/man4/magic.4.asp>
