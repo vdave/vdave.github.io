@@ -9,6 +9,14 @@ Looking into the file utility and having it detect file types. On OS X, the vari
 
 <!--break-->
 
+~~~ bash
+$ file -b seasurf.nc
+NetCDF Data Format data
+
+$ file -b -I seasurf.nc
+application/octet-stream; charset=binary
+~~~
+
 It would be nice to augment the `file` command to support the various [formats](https://cn.dataone.org/cn/v2/formats) used in DataONE.
 
 [^1]: See also <https://linux.die.net/man/5/magic>
