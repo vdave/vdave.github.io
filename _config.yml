@@ -1,0 +1,20 @@
+title:              Dave
+tagline:            on GitHub Pages
+description:        Miscellaneous, mostly work related notes.
+url:                http://vdave.github.io
+
+author:
+  name:             Dave Vieglais
+  url:              https://ku.edu/~vieglais
+  email:            dave.vieglais@gmail.com
+
+# GitHub Pages / Jekyll configuration
+baseurl:            ''
+permalink:          /:title/
+paginate:           5
+defaults:
+  -
+    scope:
+      path:         ''
+    values:
+      layout:       post
