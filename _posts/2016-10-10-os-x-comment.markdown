@@ -2,7 +2,7 @@
 layout: post
 title: "OS X Comment"
 date: "2016-10-10 12:45:45 -0500"
-categories:[OS X]
+categories: ["OS X"]
 tags: [metadata, files]
 ---
 
