@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "20161018 - File Types"
+title: "File Types"
 categories: [DataONE]
 tags: [types, files]
 ---

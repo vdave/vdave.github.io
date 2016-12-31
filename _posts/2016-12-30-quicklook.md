@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "20161230 - Quicklook"
+title: "Quicklook"
 categories: [OS X]
 tags: [preview, files]
 ---

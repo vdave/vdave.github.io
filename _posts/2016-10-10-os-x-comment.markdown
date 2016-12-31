@@ -2,6 +2,8 @@
 layout: post
 title: "OS X Comment"
 date: "2016-10-10 12:45:45 -0500"
+categories:[OS X]
+tags: [metadata, files]
 ---
 
 A tool to add comments to files on OS X in a way that contains both plain text and structured data. This is preferred over adding custom extended attributes as the spotlight comments have a better chance of being preserved with file transfers and synchronization tools like DropBox.
