@@ -39,7 +39,7 @@ optional arguments:
 
 Some examples:
 
-~~~ bash
+~~~ plaint
 $ echo "This is some test comment" | comment test2.md
 
 $ comment -s "id:test2" test2.md
