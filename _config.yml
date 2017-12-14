@@ -2,6 +2,8 @@ title:              Dave
 tagline:            on GitHub Pages
 description:        Miscellaneous, mostly work related notes.
 url:                http://datadavev.github.io
+paginate:           10
+paginate_path:      "/page:num"
 
 author:
   name:             Dave Vieglais
@@ -9,15 +11,22 @@ author:
   email:            dave.vieglais@gmail.com
 
 # GitHub Pages / Jekyll configuration
-markdown: kramdown
+markdown: pandoc
+pandoc:
+  extensions:
+    - smart
+    - mathjax
+markdown_ext:       markdown,md
+encoding:           utf-8
+
 kramdown:
   input: GFM
 baseurl:            ''
-permalink:          /:title/
+permalink:          /:year:month:day-:title/
 paginate:           5
 defaults:
   -
     scope:
       path:         ''
     values:
-      layout:       post
+      layout:       posts
