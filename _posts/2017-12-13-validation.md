@@ -12,7 +12,7 @@ Validation can be done programatically with a couple of commonly available tools
 
 In a nutshell:
 
-```python
+```
 import os
 CATALOG=os.path.expanduser("~/xmlcatalogs/catalog.xml")
 
