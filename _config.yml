@@ -8,7 +8,7 @@ paginate_path:      "/page:num"
 author:
   name:             Dave Vieglais
   url:              https://ku.edu/~vieglais
-  email:            dave.vieglais@gmail.com
+  email:            
 
 # GitHub Pages / Jekyll configuration
 markdown: pandoc

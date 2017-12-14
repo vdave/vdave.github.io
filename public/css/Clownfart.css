@@ -3,7 +3,7 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 body{
 color:#333;
 font-family: 'Minion Pro', Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-font-size:1.75em;
+font-size:1.2em;
 line-height:1.5em;
 background:#fdfdfd;
 text-rendering: optimizeLegibility;
@@ -12,7 +12,7 @@ text-rendering: optimizeLegibility;
 
 #content-wrapper {
 margin:4em auto;
-max-width:33em;
+max-width:50em;
 }
 
 .shift-left {
@@ -55,7 +55,7 @@ dd p {
     height: 2em;
     width: 2em;
     background: #fdfdfd;
-    background-image: url('/toc-button.png');
+    background-image: url('/public/toc-button.png');
     background-size: 2em 2em;
     background-repeat: no-repeat;
     position: fixed;
@@ -145,7 +145,7 @@ header.site-header {
 }
 
 header.site-header .wrap {
-  max-width: 33em;
+  max-width: 50em;
   margin: 0px auto;
   padding-top: 0.2em;
 }
@@ -434,13 +434,13 @@ hr:after {
 
 
 @media (max-width: 1400px) {
-body{font-size:1.5em;}
+body{font-size:1.1em;}
 }
 @media (max-width: 1200px) {
-body{font-size:1.3em;}
+body{font-size:1.0em;}
 }
 @media (max-width: 1020px) {
-body{font-size:1.1em;}
+body{font-size:1.0em;}
 }
 @media (max-width: 850px) {
   body{font-size:0.9em;}
