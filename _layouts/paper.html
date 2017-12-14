@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+<body>
+<div id="content-wrapper">
+    {% include header.html %}
+    <div class="paper">
+        <article class="paper-content">
+        {{ content }}
+        </article>
+    </div>
+    <div class="source">
+        <a class="source-link" href="{{site.github.repository_url}}/blob/master/{{page.path}}">
+            Source
+        </a>
+    </div>
+</div>
+    {% include toc-footer.html %}
+</body>
+
+</html>
