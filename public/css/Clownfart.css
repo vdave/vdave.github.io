@@ -1,13 +1,22 @@
-html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html { 
+  font-size: 14px; 
+  overflow-y: scroll; 
+  -webkit-text-size-adjust: 100%; 
+  -ms-text-size-adjust: 100%; 
+}
 
 body{
-color:#333;
-font-family: 'Minion Pro', Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
-font-size:1.2em;
-line-height:1.5em;
-background:#fdfdfd;
-text-rendering: optimizeLegibility;
--webkit-font-smoothing: antialiased;
+  /* 
+  color:#333; 
+  background-color: #fffefa;
+  */
+  color: #0a0a0a;
+  background:#fdfdfd;
+  font-family: 'Droid Serif', 'Minion Pro', Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+  font-size:1.2em;
+  line-height:1.5em;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
 
 #content-wrapper {
@@ -52,40 +61,40 @@ dd p {
 
 /* Tocify */
 #toc-show-hide {
-    height: 2em;
-    width: 2em;
-    background: #fdfdfd;
-    background-image: url('/public/toc-button.png');
-    background-size: 2em 2em;
-    background-repeat: no-repeat;
-    position: fixed;
-    right: 0.5em;
-    top: 4em;
+  height: 2em;
+  width: 2em;
+  background: #fdfdfd;
+  background-image: url('/public/toc-button.png');
+  background-size: 2em 2em;
+  background-repeat: no-repeat;
+  position: fixed;
+  right: 0.5em;
+  top: 4em;
 }
 
 .tocify {
-width: 12em;
-max-height: 100%;
-overflow: auto;
-margin-left: 1em;
-position: fixed;
-right:-12em;
-border: none;
-z-index: 1;
-top: 4em;
+  width: 12em;
+  max-height: 100%;
+  overflow: auto;
+  margin-left: 1em;
+  position: fixed;
+  right:-12em;
+  border: none;
+  z-index: 1;
+  top: 4em;
 }
 
 .tocify ul, .tocify li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    border: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .tocify li {
-    min-height: 1.8em;
-    padding-left: 0.3em;
-    line-height: 1.8em;
+  min-height: 1.8em;
+  padding-left: 0.3em;
+  line-height: 1.8em;
 }
 
 .tocify ul.tocify-header { padding-top: 5px; }
@@ -119,11 +128,7 @@ top: 4em;
     text-indent:0.8em;
 }
 
-
-
-
-
-
+/* end tocify */
 
 
 .wrap:before,
@@ -140,7 +145,7 @@ header.site-header {
   background: #fdfdfd;
   z-index: 10;
   height: 2em;
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid #2f2f2f;
   width: 100%;
 }
 
@@ -200,10 +205,13 @@ ul.archive {
 
 a{ color: red; text-decoration:none;}
 a:visited{ color: crimson; }
-a:hover{ color: crimson; }
+a:hover{ 
+  color: crimson; 
+  border-bottom: thin dotted;
+  }
 a:active{ color:#0645ad; }
 a:focus{ outline: thin dotted; }
-a:hover, a:active{ outline: 0; }
+a:hover, a:active{ outline: 1; }
 
 ::-moz-selection{background:rgba(255,255,0,0.3);color:#000}
 ::selection{background:rgba(255,255,0,0.3);color:#000}
@@ -268,12 +276,21 @@ div.tagline { font-size: 0.9em }
 div.tagline p { margin-top: 0.2em }
 
 blockquote{
-color:#666666;
-margin:0;
-padding-left: 1.5em;
-border-left: 0.5em #EEE solid;
+  color:#666666;
+  margin:0;
+  padding-left: 1.5em;
+  border-left: 0.5em #EEE solid;
 }
-hr { display: block; height: 2px; border: 0; border-top: 1px solid #aaa;border-bottom: 1px solid #eee; margin: 1em 0; padding: 0; }
+
+hr { 
+  display: block; 
+  height: 2px; 
+  border: 0; 
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #eee; 
+  margin: 1em 0; 
+  padding: 0; 
+}
 
 
 /*pre, code, kbd, samp { color: #000; font-family: monospace, monospace; _font-family: 'courier new', monospace; font-size: 0.98em; }
@@ -283,28 +300,28 @@ pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
 /*Code Box */
 
 body pre{
-font-family:Consolas,Menlo,Courier,monospace;
-font-size:0.8em;
-line-height:25px;
-max-height: 20em;
-overflow-x:auto;
-overflow-y:auto;
-border:1px solid #d5d5d5;
-border-left:10px solid #d5d5d5;
-background-color:#fafafa;
-padding-left: 10px;
-/*padding:11px 15px 12px;*/
-/*margin-left:-25px;*/
+  font-family:Consolas,Menlo,Courier,monospace;
+  font-size:0.8em;
+  /*line-height:25px;*/
+  max-height: 20em;
+  overflow-x:auto;
+  overflow-y:auto;
+  border:1px solid #d5d5d5;
+  border-left:4px solid #d5d5d5;
+  background-color:#fafafa;
+  padding-left: 10px;
+  /*padding:11px 15px 12px;*/
+  /*margin-left:-25px;*/
 }
 
 .gist {font-size:0.7em}
 
 .gist pre {
-max-height: none;
+  max-height: none;
 }
 
 .gist-data.gist-syntax {
-max-height: 20em;
+  max-height: 20em;
 }
 
 .gist table {
@@ -317,9 +334,9 @@ border: 0;
 }
 body p code, dd p code, dd code, li code {
     font-family:Consolas,Menlo,Courier,monospace;
-    font-size: 0.7em;
-    border: 1px solid #d5d5d5;
-    background: #f0f0f7;
+    font-size: 0.9em;
+    /*border: 1px solid #d5d5d5;*/
+    /*background: #f0f0f7;*/
     padding: 0.3em 0.2em 0.1em 0.2em;
 }
 
