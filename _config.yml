@@ -18,6 +18,9 @@ pandoc:
     - mathjax
 markdown_ext:       markdown,md
 encoding:           utf-8
+sass:
+  sass_dir: _sass
+
 
 kramdown:
   input: GFM
@@ -30,3 +33,7 @@ defaults:
       path:         ''
     values:
       layout:       posts
+  - scope:
+      path: "assets/img"
+    values:
+      image: true

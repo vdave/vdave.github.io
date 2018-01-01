@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "OS X Comment"
+summary: "Adding comments to files to assist discovery on OS X"
 date: "2016-10-10 12:45:45 -0500"
 categories: ["OS X"]
 tags: [metadata, files]

@@ -1,0 +1,44 @@
+/* Site header */
+header.site-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background: #fdfdfd;
+  z-index: 10;
+  height: 2em;
+  border-bottom: 2px solid #2f2f2f;
+  width: 100%;
+  color: $header-font-color;
+  font-size: $header-font-size;
+}
+
+header.site-header .wrap {
+  max-width: 33.4em;
+  margin: 0px auto;
+  padding-top: 0.6em;
+}
+
+.site-header a {
+  color: $header-font-color;
+  border-bottom: none;
+}
+
+.site-header a:visited {
+  color: $header-font-color;
+}
+
+.site-header a:hover {
+  color: red;
+  border-bottom: none;
+}
+
+.site-nav {
+  display: inline;
+}
+
+.site-nav .trigger {
+  display: inline;
+  float: right;
+  padding: 0 0.5em;
+}
+

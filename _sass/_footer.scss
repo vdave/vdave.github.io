@@ -1,0 +1,28 @@
+/* Site footer */
+
+footer.site-footer {
+  border-top: 1px solid #e8e8e8;
+  color: $footer-font-color;
+  font-size: 0.7em;
+}
+
+.site-footer a {
+  color: $footer-font-color;
+  border-bottom: none;
+}
+
+.site-footer a:visited {
+  color: $footer-font-color;
+  border-bottom: none;
+}
+
+.site-footer a:hover {
+  color: red;
+  border-bottom: none;
+}
+
+div.source {
+  margin-top: 0.5em;
+  margin-bottom: 1em
+}
+
