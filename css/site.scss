@@ -3,6 +3,43 @@
 #only Main files contain this front matter, not partials.
 ---
 
+/* Import ET Book styles
+   adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+
+@charset "UTF-8";
+
+@font-face {
+  font-family: ETbook;
+  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
+  src: url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbemboromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ETbook;
+  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot");
+  src: url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbemboromanosf") format("svg");
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: ETbook;
+  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot");
+  src: url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbemboromanosf") format("svg");
+  font-weight: bold;
+  font-style: normal
+}
+
+@font-face {
+  font-family: ETbookRomanOldStyle;
+  src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot");
+  src: url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.eot?#iefix") format("embedded-opentype"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.woff") format("woff"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.ttf") format("truetype"), url("../fonts/et-book/et-book-roman-old-style-figures/et-book-roman-old-style-figures.svg#etbemboromanosf") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 @import "base";
 
 #content-wrapper {
@@ -476,7 +513,7 @@ hr:after {
 
 @media (max-width: 1200px) {
   body {
-    /*font-size: 1.0em;*/
+    font-size: 0.9em;
   }
 }
 
@@ -489,7 +526,7 @@ hr:after {
 @media (max-width: 850px) {
 
   body {
-    font-size: 1.0 * 0.9em;
+    font-size: 1.0 * 0.8em;
   }
 
   #toc {
