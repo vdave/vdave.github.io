@@ -192,7 +192,7 @@ Inline `code` has `back-ticks around` it.
 
 Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
-```no-highlight
+``` no-highlight
  ```javascript
  var s = "JavaScript syntax highlighting";
  alert(s);
@@ -208,6 +208,7 @@ Blocks of code are either fenced by lines with three back-ticks <code>```</code>
  But let's throw in a <b>tag</b>.
  ```
 ```
+
 
 ```javascript
 var s = "JavaScript syntax highlighting";
