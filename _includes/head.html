@@ -26,12 +26,29 @@
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
 
+
+
   <!-- MathJax -->
   <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   <!-- Highlight.js -->
+  <!--
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/default.min.css">
   <style>.hljs{background:transparent;}</style>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  -->
+  {% if page.photo_gallery %}
+  <link rel='stylesheet prefetch' href='https://cdn.jsdelivr.net/lightgallery/latest/css/lightgallery.css'>
+  <link rel='stylesheet prefetch' href='/public/css/justifiedGallery.min.css'>
+  <link rel='stylesheet' href='/public/css/style.css'>
+
+  <script src='/public/js/jquery.min.js'></script>
+  <script src='/public/js/picturefill.min.js'></script>
+  <script src='/public/js/jquery.mousewheel.min.js'></script>
+  <script src='/public/js/lightgallery-all-min.js'></script>
+  <script src='/public/js/jquery.justifiedGallery.min.js'></script>
+  <script src='/public/js/index.js'></script>  
+  {% endif %}
+
 </head>
