@@ -11,10 +11,12 @@ header.site-header {
   font-family: $headfoot-font-family;
   color: $header-font-color;
   font-size: $header-font-size;
+  //max-width: 33.4em;
+  //padding-left: 5em;
+  //padding-right: 5em;
 }
 
 header.site-header .wrap {
-  max-width: 33.4em;
   margin: 0px auto;
   padding-top: 0.6em;
 }

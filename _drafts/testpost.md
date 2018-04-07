@@ -12,7 +12,7 @@ Anything after the `<!-- break -->` element appears in the post.
 
 This is intended as a quick reference and showcase. For more complete info, see [John Gruber's original spec](http://daringfireball.net/projects/markdown/) and the [Github-flavored Markdown info page](http://github.github.com/github-flavored-markdown/).
 
-This cheatsheet is specifically *Markdown Here's* version of Github-flavored Markdown. This differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a *Markdown Here* email, but it should be pretty close.
+This cheatsheet is specifically *Markdown Here's* version of Github-flavored Markdown. <sidenote>This<notetext>Here is the sidenote text.</notetext></sidenote> differs slightly in styling and syntax from what Github uses, so what you see below might vary a little from what you get in a *Markdown Here* email, but it should be pretty close.
 
 You can play around with Markdown on our [live demo page](http://www.markdown-here.com/livedemo.html).
 
@@ -79,7 +79,7 @@ Combined emphasis with **asterisks and _underscores_**.
 Strikethrough uses two tildes. ~~Scratch this.~~
 ```
 
-Emphasis, aka italics, with *asterisks* or _underscores_.
+<sidenote>Emphasis<notetext>This is a side note for the emphasis entry. Note clear why this causes the line wrap after the number.</notetext></sidenote>, aka italics, with *asterisks* or _underscores_.
 
 Strong emphasis, aka bold, with **asterisks** or __underscores__.
 
@@ -193,20 +193,20 @@ Inline `code` has `back-ticks around` it.
 Blocks of code are either fenced by lines with three back-ticks <code>```</code>, or are indented with four spaces. I recommend only using the fenced code blocks -- they're easier and only they support syntax highlighting.
 
 ``` no-highlight
- ```javascript
+ ``javascript
  var s = "JavaScript syntax highlighting";
  alert(s);
- ```
+ ``
 
- ```python
+ ``python
  s = "Python syntax highlighting"
  print s
- ```
+ ``
 
- ```
+ ``
  No language indicated, so no syntax highlighting.
  But let's throw in a <b>tag</b>.
- ```
+ ``
 ```
 
 

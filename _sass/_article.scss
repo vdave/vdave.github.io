@@ -2,3 +2,49 @@
 div.post {
   margin-bottom: 4em;
 }
+
+/*
+https://codepen.io/dredmorbius/pen/OVmKZX
+
+See also:
+https://acdlite.github.io/jquery.sidenotes/
+
+*/
+
+article {
+  counter-reset: noteNum;
+}
+
+article sidenote {
+    display: inline;
+}
+
+article sidenote::after {
+    vertical-align: super;
+    font-size: 0.6em;
+    display: inline;
+    margin-left: 0em;
+    margin-right: 0.1em;
+    width: 1rem;
+    content: " " counter(noteNum) "";
+}
+
+article sidenote notetext {
+    background: #fffee8;
+    border: solid 1px #333;
+    border-width: 1px 0;
+    float: right;
+    clear: right;
+    display: inline-block;
+    margin: 0.25rem -10rem 0.75rem 1rem;
+    padding: 0.25rem 0.5rem;
+    width: 8rem;
+    _display: none;
+}
+
+article sidenote notetext::before {
+    counter-increment: noteNum;
+    content: "Note " counter(noteNum) ": ";
+    padding-right: 0.2em;
+    font-style: italic;
+}

@@ -1,10 +1,11 @@
 $font-base-size: 16px;
 $font-color: #2f2f2f;
 $header-font-color: #666;
-$header-font-size: 1.5em;
+$header-font-size: 1.0em;
 $footer-font-color: $header-font-color;
 //$page-background: #f9f7f1;
-$page-background: #fffefa;
+//$page-background: #fffefa;
+$page-background: #ffffff;
 
 //$body-font-family: 'Droid Serif', 'Minion Pro', Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
 //$body-font-family: 'Droid Serif', Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
@@ -12,9 +13,10 @@ $page-background: #fffefa;
 $body-font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
 //$body-font-family: 'Merriweather', serif;
 $body-fixed-font-family: 'Lucida Console', Monaco, monospace;
-$headfoot-font-family: 'Merriweather Sans', sans-serif;
+//$headfoot-font-family: 'Merriweather Sans', sans-serif;
+$headfoot-font-family: $body-font-family;
 
-$body-font-size: 1.9;
+$body-font-size: 1.0em;
 $h1-font-size: 1.8em;
 $h2-font-size: 1.4em;
 $h3-font-size: 1.3em;
