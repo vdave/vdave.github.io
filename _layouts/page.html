@@ -1,8 +1,14 @@
 ---
 layout: default
 ---
-
 <div class="page">
-  <h1 class="page-title">{{ page.title }}</h1>
+  <article class="post-content">
   {{ content }}
+  </article>
 </div>
+<div class="source">
+    <a class="source-link" href="{{site.github.repository_url}}/blob/master/{{page.path}}">
+      Source
+    </a>
+</div>
+

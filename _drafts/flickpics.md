@@ -1,14 +1,13 @@
 ---
 layout: post_photo
 title: "Flick Pics"
-photo_gallery: true
 categories: [Photography]
 tags: [photography, Flickr, javascript]
 ---
 
 Herein is described a workflow to accessing photographs stored in Flickr from an alternative gallery.
 
-Advantage is that photo presentation can be highly customized without tadvertisements and other Yahoo impositions. Disadvantage is that any touching of the photos requires recapture of the URLs for those photos. 
+Advantage is that photo presentation can be highly customized without advertisements and other Yahoo impositions. Disadvantage is that any touching of the photos requires recapture of the URLs for those photos. 
 
 <!--break-->
 
@@ -69,3 +68,4 @@ Multiple galleries can be placed on a page:
   gallery-name="TEST01">
 </div>
 
+---

@@ -184,6 +184,9 @@ function loadGallery(target_id) {
 
 
 $(document).ready(function() {
-  loadGallery("gallery01");
-  loadGallery("gallery02");
+  //TODO: Load this by finding class
+  $(".demo-gallery").each( function() {
+    var gallery_id = $( this ).attr('id');
+    loadGallery(gallery_id);
+  }); 
 });
