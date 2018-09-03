@@ -1,39 +1,24 @@
-title:              Dave
-tagline:            on GitHub Pages
-description:        Miscellaneous, mostly work related notes.
-url:                http://datadavev.github.io
-paginate:           10
-paginate_path:      "/page:num"
-
-author:
-  name:             Dave Vieglais
-  url:              https://ku.edu/~vieglais
-  email:            
-
-# GitHub Pages / Jekyll configuration
-markdown: pandoc
-pandoc:
-  extensions:
-    - smart
-    - mathjax
-markdown_ext:       markdown,md
-encoding:           utf-8
-sass:
-  sass_dir: _sass
-
-
-kramdown:
-  input: GFM
-baseurl:            ''
-permalink:          /:year:month:day-:title/
-paginate:           5
-defaults:
-  -
-    scope:
-      path:         ''
-    values:
-      layout:       posts
-  - scope:
-      path: "assets/img"
-    values:
-      image: true
+# Note: If you want to deploy to a GitHub user site (user.github.io), change baseurl to /
+baseurl: 
+title: Dave's Notes
+# Whether the header (with large title and subtitle) should be displayed
+header: true
+subtitle: Absence of evidence is not evidence of absence
+author: Dave Vieglais
+email: dave [dot] vieglais [at] gmail
+description: Notes on various topics 
+markdown: kramdown
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+highlighter: rouge
+permalink: /articles/:categories/:year/:month/:day/:title.html
+timezone: America/NewYork
+excerpt_separator: <!--more-->
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'DeployToGithub.Rakefile', 'README.md']
+post:
+  template: _post.txt
+  extension: md
+page:
+  template: _page.txt
+  extension: md
+git:
+  branch: src

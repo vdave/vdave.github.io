@@ -8,13 +8,13 @@ tags: [xml, xmlschema, xmlcatalog, parsing, validation]
 
 Validating XML against the cited schema makes sure that the XML is at least structured correctly, and helps ensure that consumers of the XML have some guarantees about what to expect.
 
-<!--break-->
+<!--more-->
 
-Validation can be done programatically with a couple of commonly available tools, typically coming down to a choice of `libxml2` for C and Python or `Xerces` for Java. The examples here are for the Python `lxml` library, which uses `libxml2` under the hood.
+Validation can be done pragmatically with a couple of commonly available tools, typically coming down to a choice of `libxml2` for C and Python or `Xerces` for Java. The examples here are for the Python `lxml` library, which uses `libxml2` under the hood.
 
 In a nutshell:
 
-```
+```python
 import os
 CATALOG=os.path.expanduser("~/xmlcatalogs/catalog.xml")
 

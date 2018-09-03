@@ -5,9 +5,13 @@ categories: [DataONE]
 tags: [types, files]
 ---
 
-Looking into the file utility and having it detect file types. On OS X, the various configuration files are located in  `/usr/share/file/magic`.[^1]
+Looking into the file utility and having it detect file types. 
 
-<!--break-->
+<!--more-->
+
+
+On OS X, the various configuration files are located in  `/usr/share/file/magic`.[^1]
+
 
 ~~~ bash
 $ file -b seasurf.nc
