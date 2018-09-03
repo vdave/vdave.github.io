@@ -1,20 +1,12 @@
-# tufte-css-jekyll
+# My Notes
 
-## [tufte-css](https://github.com/edwardtufte/tufte-css) wrapped in a comfy Jekyll theme with `rake` support
+## Theme Info
 
 *tufte-css-jekyll* aims at closely mimicking the [Edward Tufte](https://www.edwardtufte.com/tufte/)-inspired styles from [*tufte-css*](https://github.com/edwardtufte/tufte-css) ([MIT License](https://github.com/edwardtufte/tufte-css/blob/gh-pages/LICENSE)) in the framework of a [Jekyll](http://jekyllrb.com/) theme for satic pages and blog posts.
 
 It is based heavily on previous work by [Clay Harmon](http://www.clayharmon.com/), who provides [*tufte-jekyll*](https://github.com/clayh53/tufte-jekyll) ([MIT License](https://github.com/clayh53/tufte-jekyll/blob/master/LICENSE)) which also draws heavily on *tufte-css*, albeit with some stylistical deviations. In comparison, *tufte-css-jekyll* tries to stay as true to *tufte-css* as possible.
 
 *tufte-css-jekyll* also makes use of a boilerplate [`rake`](https://github.com/ruby/rake) [file](https://github.com/sdruskat/tufte-css-jekyll/blob/src/Rakefile) (provided by [Ellen Gummesson](http://ellengummesson.com/) at [jekyll-rake-boilerplate](https://github.com/gummesson/jekyll-rake-boilerplate)), which makes it easy to commandeer the Jekyll site via a number of easy-to-use [commands](#work-with-the-site-comfortably-with-rake). It alo provides a custom [Rakefile](https://github.com/sdruskat/tufte-css-jekyll/blob/src/DeployToGithub.Rakefile), which makes it easy to push the site to a [GitHub page](https://pages.github.com/).
-
-## Demo page
-
-A demo-page can be found at [sdruskat.github.io/tufte-css-jekyll/](https://sdruskat.github.io/tufte-css-jekyll/). The page ["Tufte CSS"](https://sdruskat.github.io/tufte-css-jekyll/page/) on this site aims at reproducing the [*tufte-css* demo page](https://edwardtufte.github.io/tufte-css/).
-
-## Installation
-
-[Download](https://github.com/sdruskat/tufte-css-jekyll/releases) or [clone this repository](https://github.com/sdruskat/tufte-css-jekyll.git).
 
 ## Usage
 
@@ -59,11 +51,4 @@ Depending on whether you want to deploy to a project (branch `gh-pages`) or a us
 
 In detail, this will `git commit` changes to `src` with a boilerplate commit message and `git push` to `origin/src`, then checkout `gh-pages` (or `master`), remove everything, copy the build result (in `./site`) from a tmp directory to the branch, `commit` with a timestamp, force `push` to the respective branch, an checkout `src` again.
 
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/sdruskat/tufte-css-jekyll. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
 

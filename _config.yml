@@ -13,12 +13,12 @@ highlighter: rouge
 permalink: /articles/:categories/:year/:month/:day/:title.html
 timezone: America/NewYork
 excerpt_separator: <!--more-->
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'DeployToGithub.Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'DeployToGithub.Rakefile', 'README.md', 'page']
 post:
   template: _post.txt
   extension: md
-page:
-  template: _page.txt
-  extension: md
+#page:
+#  template: _page.txt
+#  extension: md
 git:
   branch: src

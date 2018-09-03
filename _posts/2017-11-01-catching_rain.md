@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: Catching Rain
 subtitle: How much water from my roof?
 weight: 3
