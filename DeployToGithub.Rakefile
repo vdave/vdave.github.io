@@ -54,4 +54,4 @@ task :publishmaster => [:generate] do
 end
 
 
-task :default => :publish
+task :default => :publishmaster
