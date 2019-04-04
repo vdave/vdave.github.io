@@ -420,6 +420,7 @@ pre {
   @if $debug == 1 {
     border: 3px dashed red;
   }
+  white-space: pre-wrap;
 }
 
 pre, pre code, p code, p pre code {
