@@ -113,13 +113,13 @@ a {
 Links can be displayed using a nice underline or by contrast text and is
 controlled by the $link-style scss variable.
 */
-p > a, cite > a, .sidenote a, .credits a {
+li > a, dd > a, p > a, cite > a, .sidenote a {
   // CUSTOM
 
   @if $link-style == underline {
     color: $text-color;
-    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
-    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
+    background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient($low-contrast-color, $low-contrast-color);
+    background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient($low-contrast-color, $low-contrast-color);
     -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
     -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
     background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
@@ -129,7 +129,7 @@ p > a, cite > a, .sidenote a, .credits a {
   }
 
   @else {
-    scolor: $contrast-color;
+    color: $contrast-color;
     text-decoration: none;
   }
 }
@@ -845,8 +845,10 @@ ul.footer-links li {
   padding: 0.5rem 0.25rem;
 }
 
-.credits {
+.credits * {
   padding: 1rem 0rem;
+  font-size: 90%;
+  color: $low-contrast-color;
 }
 
 // End of Nav and Footer styling area
