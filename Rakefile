@@ -8,7 +8,7 @@ require 'rbconfig'
 # == Configuration =============================================================
 
 # Set "rake watch" as default task
-task :default => :default
+#task :default => :default
 
 # Load the configuration file
 CONFIG = YAML.load_file("_config.yml")
@@ -224,4 +224,11 @@ task :transfer do
   else
     raise "#{command} isn't a valid file transfer command."
   end
+end
+
+desc "Build the site and publish to master"
+task :default do
+  puts "Running Travis CI tasks..."
+  sh("JEKYLL_ENV=production bundle exec jekyll build")
+  puts "Jekyll successfully built."
 end
