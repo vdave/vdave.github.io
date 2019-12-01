@@ -1,6 +1,6 @@
 ---
 layout: full-width
-title: Home
+title: Notes
 # Note that this index page uses a full-width layout!
 weight: 2
 ---
@@ -11,7 +11,7 @@ weight: 2
         <li class="listing">
           <a href="{{ post.url | prepend: site.baseurl }}"><h2 class="larger">{{ post.title }}</h2></a>
           <span class="smaller">{{ post.date | date: "%B %-d, %Y" }}</span>
-          <div>{{ post.excerpt }}</div> 
+          <div>{{ post.excerpt }}</div>
         </li>
     {% endfor %}
   </ul>
